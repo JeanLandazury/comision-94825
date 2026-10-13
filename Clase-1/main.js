@@ -1,6 +1,4 @@
 
-
-
 let nombre = " Jean";    // String o cadena de texto 
 let edad = 29;  // Number 
 let soltero = false; // Boolean  true or flase 
@@ -46,29 +44,34 @@ console.log(sumaRara);
 // funciones nactivas
 // Prompt
 
-let user = prompt("Cual es tu nombre?");
-
+let user = prompt("¿Cuál es tu nombre?");
 
 console.log(user);
+alert("Hola " + user + ", Bienvenido a la clase de JavaScript: Mi Primer Script Interactivo.");
 
-console.log (Number (user));
-console.log(parseInt(user));
-console.log(parseFloat(user));
+let user2 = parseInt(prompt("¿Cuál es tu edad?"));
 
-alert("Hola " + user + " Bienvenido a la clase de JavaScript Jean Landazury");
+console.log(user2);
+alert("Hola " + user + ", tienes " + user2 + " años.");
+
+let user3 = parseFloat(prompt("¿Cuál es tu salario mensual?"));
+
+console.log(user3);
+alert("Hola " + user + ", tu salario mensual es de " + user3 + " pesos.");
+
+// Operación matemática
+let salarioAnual = user3 * 12;
+
+console.log("Tu salario anual es: " + salarioAnual);
+
+alert("Tu salario anual es de " + salarioAnual + " pesos.");
 
 
-// Comfirm
 
-let siONo = confirm("Estas seguro de eliminar este elemento?");
 
-console.log(siONo);
 
-let mensaje = siONo ? "Elemento eliminado" : "No se elimino el elemento";
-console.log(mensaje);
 
-let mensaje = nombre === "Jean" ? "Bienvenido Jean" : "No eres Jean";
-console.log(mensaje);
+
 
 
 
